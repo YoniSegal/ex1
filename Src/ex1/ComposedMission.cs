@@ -8,10 +8,11 @@ namespace Excercise_1
 {
     public class ComposedMission : IMission
     {
+        //Members
         private string missionName;
         List<FunctionsContainer.delegateFunction> delegateFunctions { get; }
         public event EventHandler<double> OnCalculate;
-
+        //Methods
         public ComposedMission(string name)
         {
             this.missionName = name;

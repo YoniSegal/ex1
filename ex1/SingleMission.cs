@@ -20,7 +20,7 @@ namespace Excercise_1
         }
         string IMission.Name => missionName;
 
-        string IMission.Type => "single";
+        string IMission.Type => "Single";
 
         public double Calculate(double value)
         {

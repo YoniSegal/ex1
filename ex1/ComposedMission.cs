@@ -21,16 +21,17 @@ namespace Excercise_1
 
         string IMission.Name => missionName;
 
-        string IMission.Type => "composed";
+        string IMission.Type => "Composed";
 
         public double Calculate(double value)
         {
+            double ans = value;
             foreach (var func in delegateFunctions)
             {
-                func.Invoke(value);
+                ans = func.Invoke(ans);
             }
-            OnCalculate?.Invoke(this, value);
-            return value;
+            OnCalculate?.Invoke(this, ans);
+            return ans;
         }
 
         public ComposedMission Add(FunctionsContainer.delegateFunction func)
