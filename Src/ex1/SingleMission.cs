@@ -1,4 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Excercise_1
 {
@@ -9,14 +13,14 @@ namespace Excercise_1
     {
         //Members
         private string missionName;
-        FunctionsContainer.delegateFunction delegateFunc { get; }
+        FunctionsContainer.delegateFunction delegateFunction { get; }
         public event EventHandler<double> OnCalculate;
 
         //Methods
         public SingleMission(FunctionsContainer.delegateFunction func, string missionName)
         {
             this.missionName = missionName;
-            delegateFunc = func;
+            delegateFunction = func;
         }
         string IMission.Name => missionName;
 
@@ -24,7 +28,7 @@ namespace Excercise_1
 
         public double Calculate(double value)
         {
-            double val = delegateFunc(value);
+            double val = delegateFunction(value);
             OnCalculate?.Invoke(this, val);
             return val;
         }

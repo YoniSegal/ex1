@@ -102,6 +102,9 @@ namespace Excercise_1
             RunMissions(missionList, 2);
 
             PrintAvailableFunctions(funcList);
+
+
+            Console.ReadLine();
         }
     }
 }

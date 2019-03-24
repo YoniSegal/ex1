@@ -9,10 +9,9 @@ namespace Excercise_1
 
     public class FunctionsContainer
     {
-        //Members
         public delegate double delegateFunction(double value);
         private Dictionary<string, delegateFunction> functions;
-        //Methods
+
         public FunctionsContainer()
         {
             functions = new Dictionary<string, delegateFunction>();
@@ -27,7 +26,7 @@ namespace Excercise_1
             }
             return missions;
         }
-        //Indexer
+
         public delegateFunction this[string name]
         {
             get

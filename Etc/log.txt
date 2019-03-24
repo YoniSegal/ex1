@@ -1,0 +1,17 @@
+commit a39d99bd12d4132042f42447ab3e07b455c59adc
+Author: Yoni Segal <yonisegal13@gmail.com>
+Date:   Sun Mar 24 19:10:52 2019 +0200
+
+    final project
+
+commit 78aae633e4ede54b55dffb700bc33c37547d2377
+Author: Yoni Segal <yonisegal13@gmail.com>
+Date:   Sun Mar 24 19:04:31 2019 +0200
+
+    Add project files.
+
+commit 7148992c66b48c8563d562dd122275a792e11e29
+Author: Yoni Segal <yonisegal13@gmail.com>
+Date:   Sun Mar 24 19:04:27 2019 +0200
+
+    Add .gitignore and .gitattributes.
